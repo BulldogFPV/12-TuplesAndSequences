@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (2 pts)
+# Done: 1. (2 pts)
 #   
 #   This module is going to look very similar to m1 in the Session 10 Coding
 #   Exercises, but this time we will use tuples instead of lists.
@@ -13,9 +13,16 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+recipes = (
+    "Spaghetti Bolognese",
+    "Chicken Stir-Fry",
+    "Vegetable Lasagna",
+    "Beef Tacos"
+)
 
+print(recipes)
 ###############################################################################
-# TODO: 2. (2 pts)
+# Done: 2. (2 pts)
 #   
 #   For this _TODO_, write a line of code that accesses the *second* item in the
 #   tuple (remember the index of the first item is 0) and prints the item. Make
@@ -23,9 +30,9 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-
+print(recipes[1])
 ###############################################################################
-# TODO: 3. (2 pts)
+# Done: 3. (2 pts)
 #   
 #   For this _TODO_, write some code that changes the *third* item to a
 #   different meal that you don't already have in your tuple. Once you have
@@ -35,9 +42,12 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-
+recipe_list = list(recipes)
+recipe_list[2] = "Fish Tacos"
+recipes = tuple(recipe_list)
+print(recipes)
 ###############################################################################
-# TODO: 4. (2 pts)
+# Done: 4. (2 pts)
 #   
 #   For this _TODO_, write a some code that adds a recipe to the end of
 #   the tuple. Once you have done this, print the tuple. Remember that tuples
@@ -49,9 +59,12 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-
+recipe_list = list(recipes)
+recipe_list.append("Pasta Carbonara")
+recipes = tuple(recipe_list)
+print(recipes)
 ###############################################################################
-# TODO: 5. (2 pts)
+# Done: 5. (2 pts)
 #   
 #   For this _TODO_, write some code that removes the last item from the
 #   tuple. Once you have done this, print the tuple. Remember that tuples are
@@ -63,9 +76,12 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-
+recipe_list = list(recipes)
+recipe_list.pop()
+recipes = tuple(recipe_list)
+print(recipes)
 ###############################################################################
-# TODO: 6. (2 pts)
+# Done: 6. (2 pts)
 #
 #   In the reading, you saw a concept called unpacking a tuple. If you don't
 #   remember what this is, go back an look at the reading. Once you have done
@@ -77,3 +93,8 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+recipe1, recipe2, recipe3, recipe4 = recipes
+print(recipe1)
+print(recipe2)
+print(recipe3)
+print(recipe4)
